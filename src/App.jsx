@@ -44,13 +44,17 @@ function App() {
           <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-purple-500"></div>
         </div>
       ) : (
-        <main className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in">
+        <main className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 animate-fade-in px-4">
           <NameSearch names={names} />
           <NameGenerator names={names} />
         </main>
       )}
 
       <footer className="text-center mt-16 text-white/30 text-sm">
+        <div className="mb-4 p-4 rounded-xl bg-white/5 inline-block backdrop-blur-sm border border-white/10">
+          <p className="text-white/60 mb-2 font-medium">全网最忙五人组</p>
+          <p className="text-white/80 font-bold">张吉惟、林国瑞、林玟书、林雅南、江奕云</p>
+        </div>
         <p>Built with Vite & React • 10k Chinese Names Project</p>
       </footer>
     </div>

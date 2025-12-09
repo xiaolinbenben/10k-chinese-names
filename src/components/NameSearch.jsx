@@ -26,7 +26,7 @@ const NameSearch = ({ names }) => {
                             setResult(null);
                         }}
                         placeholder="输入姓名..."
-                        className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all"
+                        className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-purple-400 transition-all box-border"
                     />
                 </div>
                 <button

@@ -24,8 +24,8 @@ const NameGenerator = ({ names }) => {
         <div className="glass-panel p-6 rounded-2xl w-full max-w-md mx-auto transition-all duration-300 hover:shadow-xl">
             <h2 className="text-2xl font-bold mb-4 text-white text-center">随机生成</h2>
 
-            <div className="flex items-center gap-4 mb-6">
-                <label className="text-white/80 whitespace-nowrap">生成数量:</label>
+            <div className="flex items-center justify-between gap-4 mb-6 bg-white/5 p-3 rounded-xl border border-white/10">
+                <label className="text-white/90 font-medium whitespace-nowrap">生成数量</label>
                 <input
                     type="number"
                     min="1"
@@ -35,7 +35,7 @@ const NameGenerator = ({ names }) => {
                         const val = parseInt(e.target.value);
                         if (val >= 1 && val <= 50) setCount(val);
                     }}
-                    className="w-full px-4 py-2 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all"
+                    className="w-24 px-3 py-2 rounded-lg bg-white/10 border border-white/20 text-white text-center focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all"
                 />
             </div>
 
